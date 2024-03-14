@@ -1,4 +1,4 @@
-package methodSourse;
+package methodSource;
 
 import org.junit.jupiter.params.provider.Arguments;
 

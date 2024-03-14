@@ -2,16 +2,25 @@ package tests;
 
 import enums.MinusData;
 import calculate.Calculator;
+import extentions.CalculatorInjector;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.*;
+
+import javax.inject.Inject;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThrows;
 
+@ExtendWith(CalculatorInjector.class)
 public class CalculatorTests extends BaseTest {
+
+    @Inject
+    Calculator calculator;
 
     @BeforeEach
     public void printBeforeEachThread() {
@@ -24,6 +33,7 @@ public class CalculatorTests extends BaseTest {
         System.out.println("Plus test start...");
         System.out.println("a value: " + a + ", b value: " + b + ", expected value: " + expected);
         assertEquals(Calculator.plus(a,b), expected);
+        assertEquals(calculator.plus(a, b), expected);
     }
     @ParameterizedTest
     @ValueSource(ints = {0})

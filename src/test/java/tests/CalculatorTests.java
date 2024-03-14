@@ -1,7 +1,7 @@
 package tests;
 
 import enums.MinusData;
-import org.example.Calculator;
+import calculate.Calculator;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;

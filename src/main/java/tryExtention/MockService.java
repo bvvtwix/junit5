@@ -1,6 +1,6 @@
-package org.example;
+package tryExtention;
 
-public class MockService implements  SiteService{
+public class MockService implements SiteService {
     @Override
     public String say() {
         return "This is a mock";

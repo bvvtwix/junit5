@@ -1,7 +1,7 @@
 package extentions;
 
-import org.example.MainService;
-import org.example.SiteService;
+import tryExtention.MainService;
+import tryExtention.SiteService;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.TestInstancePostProcessor;
 

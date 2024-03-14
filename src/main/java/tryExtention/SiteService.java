@@ -1,4 +1,4 @@
-package org.example;
+package tryExtention;
 
 public interface SiteService {
     String say();

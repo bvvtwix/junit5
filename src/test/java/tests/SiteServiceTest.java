@@ -1,7 +1,7 @@
 package tests;
 
 import extentions.SiteServiceInjector;
-import org.example.SiteService;
+import tryExtention.SiteService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
